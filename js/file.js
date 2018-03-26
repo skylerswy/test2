@@ -23,7 +23,7 @@ div.onmousedown = function(e) {
      * this 代表当前的 html element：<div id="box"></div>，可以：console.log(this) 查看
      */
     var cs = getComputedStyle(this, null);
-
+    console.log(this);
     disX = e.pageX - parseInt(cs.getPropertyValue('left'));
     disY = e.pageY - parseInt(cs.getPropertyValue('top'));
 
